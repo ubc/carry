@@ -8,13 +8,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
+	<?php carry_single_header(); ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'carry' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'carry' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'carry' ).'</span>', 'after' => '</div>', 'pagelink' => '<span>%</span>' ) ); ?>
+		<?php /* edit_post_link( __( 'Edit', 'carry' ), '<span class="edit-link">', '</span>' ); */ ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

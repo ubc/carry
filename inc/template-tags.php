@@ -27,8 +27,8 @@ function carry_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'carry' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'carry' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav"><i class="icon-chevron-left"></i>' . __( 'Previous post link', 'carry' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . __( 'Next post link', 'carry' ) . '<i class="icon-chevron-right"></i></span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
@@ -80,7 +80,7 @@ function carry_comment( $comment, $args, $depth ) {
 				<?php endif; ?>
 
 				<div class="comment-meta commentmetadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><i class="icon-time"></i><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
 						printf( __( '%1$s', 'carry' ), get_comment_date('M j - g:ia') ); ?>
@@ -148,6 +148,79 @@ function carry_categorized_blog() {
 		return false;
 	}
 }
+
+if ( ! function_exists( 'carry_post_meta' ) ) :
+/**
+ * carry_post_meta function.
+ * 
+ * @access public
+ * @return void
+ */
+function carry_post_meta() {
+	/* translators: used between list items, there is a space after the comma */
+	$category_list = get_the_category_list( __( ', ', 'carry' ) );
+
+	/* translators: used between list items, there is a space after the comma */
+	$tag_list = get_the_tag_list( '', ', ' );
+
+	if ( ! carry_categorized_blog() ) {
+		// This blog only has 1 category so we just need to worry about tags in the meta text
+		if ( '' != $tag_list ) {
+			$meta_text = __( '<i class="icon-tags"></i> <span class="meta-shell">%2$s</span> Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'carry' );
+		} else {
+			$meta_text = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'carry' );
+		}
+
+	} else {
+		// But this blog has loads of categories so we should probably display them here
+		if ( '' != $tag_list ) {
+			$meta_text = __( '<i class="icon-folder-open"></i> <span class="meta-shell">%1$s</span>  <i class="icon-tags"></i> <span class="meta-shell">%2$s</span>  <i class="icon-globe"></i> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'carry' );
+		} else {
+			$meta_text = __( '<i class="icon-folder-open"></i> <span class="meta-shell">%1$s</span> <i class="icon-globe"></i> <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'carry' );
+		}
+
+	} // end check for categories on this blog
+
+	printf(
+		$meta_text,
+		$category_list,
+		$tag_list,
+		get_permalink(),
+		the_title_attribute( 'echo=0' )
+	);
+
+}
+endif;
+
+if ( ! function_exists( 'carry_single_header' ) ) :
+/**
+ * carry_single_header function.
+ * 
+ * @access public
+ * @return void
+ */
+function carry_single_header(){
+	global $post;
+	$thumb = ''; $has_thumbnail = '';
+	if ( has_post_thumbnail() ) :
+		$has_thumbnail = 'has-feature-image';
+		$thumb = get_the_post_thumbnail($post->ID ,array(615,9999) );
+	endif;
+	?>
+	<header class="entry-header <?php echo $has_thumbnail; ?>">
+		<?php echo $thumb; ?>
+		<div class="enter-header-thumb">
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<?php if( !is_page() ): ?>
+		<div class="entry-meta">
+			<?php carry_posted_on(); ?>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
+		</div>
+	</header><!-- .entry-header -->
+	<?php 
+}
+endif;
 
 /**
  * Flush out the transients used in carry_categorized_blog

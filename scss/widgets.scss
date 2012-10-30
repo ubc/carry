@@ -1,0 +1,111 @@
+/* =Asides
+----------------------------------------------- */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	margin: 0 0 1.5em;
+}
+.widget ul{
+ list-style: none;
+ margin-left: 5px;
+}
+.tagcloud, 
+#calendar_wrap,
+.textwidget{
+	padding: 0 5px;
+}
+.widget_categories select,
+.widget_archive select{
+	margin: 5px 5px 0;
+}
+#searchform {
+	border:1px solid #CCC;
+	padding: 2px 0 2px;
+	margin-right: 5px;
+}
+#searchform #s{
+	padding: 2px;
+	width: 63%;
+	border: 0;
+}
+.s-shell{
+	display:inline;
+}
+.half #searchform #s{
+	width: 74%;
+}
+.half #searchform #searchsubmit{
+	width: 20%;
+	text-overflow: ellipsis;
+	padding: 3px 1%;
+	float: right;
+	margin-right: 1%;
+}
+#searchform #searchsubmit{
+	display: inline;
+	padding: 1px 3px;
+	font-size: 11px;
+}
+#tertiary #searchform #s{
+	width: 80%;
+}
+#tertiary #searchform #searchsubmit {
+	width: 15%;
+	text-overflow: ellipsis;
+	padding: 3px 1%;
+	float: right;
+	margin-right: 1%;
+}
+#tertiary .widget_search .widget-title {
+	margin-bottom: 10px;
+}
+#tertiary #searchform{
+	margin: 0 10px 0 0;
+	padding: 2px 0 3px;
+}
+#tertiary .postbox{
+	margin: 0 5px 0 0;
+}
+/* rss */
+.rsswidget img{
+	vertical-align: middle;
+}
+.rss-date{
+	color: #AAA;
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.rssSummary{
+	padding-right: 10px;
+	text-overflow: ellipsis;
+}
+/* =Widget Areas
+----------------------------------------------- */
+.widget .widget-title{
+	background: #EEE;
+	padding: 2px 10px 2px 5px;
+}
+.widget .menu{
+	list-style: none;
+	margin: 0 0 0 10px;
+}
+.widget li{
+	padding: 2px 0;
+}
+.widget h1{
+	font-size:12px;
+	line-height: 14px;
+}
+/* =Secondary
+----------------------------------------------- */
+#secondary{
+	font-size: 11px;
+}

@@ -20,9 +20,7 @@
 	text-decoration: none;
 }
 .main-navigation ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	@include box-shadow(rgba(0,0,0,0.2) 0 3px 3px );
 	display: none;
 	float: left;
 	position: absolute;

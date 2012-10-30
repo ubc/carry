@@ -31,7 +31,6 @@ get_header(); ?>
 				<?php carry_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
-
 				<?php get_template_part( 'no-results', 'search' ); ?>
 
 			<?php endif; ?>
