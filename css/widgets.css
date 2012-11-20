@@ -1,1 +1,69 @@
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}.widget{margin:0 0 1.5em}.widget ul{list-style:none;margin-left:5px}.tagcloud,#calendar_wrap,.textwidget{padding:0 5px}.widget_categories select,.widget_archive select{margin:5px 5px 0}#searchform{border:1px solid #CCC;padding:2px 0 2px;margin-right:5px}#searchform #s{padding:2px;width:63%;border:0}.s-shell{display:inline}.half #searchform #s{width:74%}.half #searchform #searchsubmit{width:20%;text-overflow:ellipsis;padding:3px 1%;float:right;margin-right:1%}#searchform #searchsubmit{display:inline;padding:1px 3px;font-size:11px}#tertiary #searchform #s{width:80%}#tertiary #searchform #searchsubmit{width:15%;text-overflow:ellipsis;padding:3px 1%;float:right;margin-right:1%}#tertiary .widget_search .widget-title{margin-bottom:10px}#tertiary #searchform{margin:0 10px 0 0;padding:2px 0 3px}#tertiary .postbox{margin:0 5px 0 0}.rsswidget img{vertical-align:middle}.rss-date{color:#AAA;display:block;font-size:11px;text-transform:uppercase;margin-bottom:5px}.rssSummary{padding-right:10px;text-overflow:ellipsis}.widget .widget-title{background:#EEE;padding:2px 10px 2px 5px}.widget .menu{list-style:none;margin:0 0 0 10px}.widget li{padding:2px 0}.widget h1{font-size:12px;line-height:14px}#secondary{font-size:11px}
+/*
+Syntax error: Invalid CSS after "	border-radius": expected "{", was "}"
+        on line 96 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss
+
+Backtrace:
+/Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss:96
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1130:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:36:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/bin/compass:23:in `load'
+/usr/bin/compass:23
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"	border-radius\": expected \"{\", was \"}\"\A         on line 96 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss"; }

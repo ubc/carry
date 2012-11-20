@@ -1,23 +1,31 @@
 /*
-Syntax error: Undefined mixin 'border-radius'.
-        on line 212 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss, in `border-radius'
-        from line 212 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss
+Syntax error: Invalid CSS after "	border-radius": expected "{", was "}"
+        on line 96 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss
+        from line 27 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/style.scss
 
 Backtrace:
-/Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss:212:in `border-radius'
-/Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss:212
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:249:in `visit_mixin'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
+/Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss:96
+/Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/style.scss:27
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1130:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:274:in `to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:222:in `visit_import'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
@@ -79,4 +87,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 212 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss, in `border-radius'\A         from line 212 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/wp.scss"; }
+  content: "Syntax error: Invalid CSS after \"	border-radius\": expected \"{\", was \"}\"\A         on line 96 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/widgets.scss\A         from line 27 of /Users/enejbajgoric/Sites/localhost/cms/wp-content/themes/carry/scss/style.scss"; }

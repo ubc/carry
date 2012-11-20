@@ -71,6 +71,7 @@ search-no-results .hentry{
 	margin: 0 15px 1.5em 0;
 	padding: 0 0 15px 15px;
 	border-bottom: 1px solid #EEE;
+	border-left:1px solid #CCC;
 }
 .page-title{
 	font-size: 16px;
@@ -84,7 +85,7 @@ search-no-results .hentry{
 .error404 .page-title,
 .page .entry-title,
 .single .entry-title{
-	font-size: 26px;
+	font-size: 28px;
 	line-height: 1;
 	margin-bottom: 2px;
 }
