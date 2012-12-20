@@ -74,9 +74,17 @@
 	<?php 
 	global $current_user;
 	
+	//remove PHP Warning when user not logged in
+	$avatar = '';
+	$display_name = '';
+	if(isset($current->data)) {
+	  $avatar = get_avatar( $current_user->data->user_email, 30 );
+	  $display_name = $current_user->data->display_name;
+	}
+	
 	$comment_form_args = array(
-		'logged_in_as' => '<div class="comment-author vcard">'.get_avatar( $current_user->data->user_email, 30 ).
-							'<cite class="fn">'.$current_user->data->display_name.'</cite></div><!-- .comment-author .vcard -->'
+		'logged_in_as' => '<div class="comment-author vcard">'.$avatar.
+							'<cite class="fn">'.$display_name.'</cite></div><!-- .comment-author .vcard -->'
 							.sprintf( __( '<a href="%1$s" title="Log out of this account" class="comment-logout">Log out?</a>' ), wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) )
 	
 	);
