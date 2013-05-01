@@ -1,14 +1,19 @@
 /* Responsive mixins */
 
 @mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: 479px) { @content; }
-  }
-  @else if $media == wide-handhelds {
-    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
-  }
-  @else if $media == tablets {
-    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
-  }
-  
+    @if $media == mobile {
+        @media only screen and (max-width: 767px) { @content; }
+    }
+    @else if $media == thin-mobile {
+        @media only screen and (max-width: 479px) { @content; }
+    }
+    @else if $media == wide-mobile {
+        @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+    }
+    @else if $media == tablet {
+        @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: 959px) { @content; }
+    }  
 }

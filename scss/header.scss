@@ -1,28 +1,36 @@
 /* =Header
 ----------------------------------------------- */
-#masthead{
+#masthead {
 	background: #3A9AC7;
-	color:#FFF;
+	color: #FFF;
 	padding: 5px 0;
 }
-#masthead hgroup{
+
+#masthead hgroup {
 	position: relative;
 	overflow: hidden;
 	display: block;
+    
+    @include respond-to(thin-mobile) {
+        padding-left: 5px;
+    }
 }
+
 .site-title,
-.site-description{
+.site-description {
 	float: left;
 	clear: none;
 	margin-right: 10px;
 	line-height: 16px;
 }
-.site-title ,
+
+.site-title,
 .site-description {
 	font-size:13px;
 }
-.site-title a{
-	color:#FFF;
+
+.site-title a {
+	color: #FFF;
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 16px;

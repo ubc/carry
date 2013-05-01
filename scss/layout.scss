@@ -1,72 +1,103 @@
+@import 'mixins';
+
 /* =Layout
 ----------------------------------------------- */
-.shell{
+.shell {
+    width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	@include respond-to(tablets) { max-width: 768px; }
+    
+    @include respond-to(tablet) {
+        width: 98%;
+    }
+    
+    @include respond-to(mobile) {
+        width: 100%;
+    }
 }
 
-.hfeed{ /* img/dot.gif */
-	background:#FFF url(data:image/gif;base64,R0lGODlhAQABAIAAAMzMzAAAACH5BAAHAP8ALAAAAAABAAEAAAICRAEAOw==) repeat-y 150px;
-	border-right: 1px solid #CCC;
+#primary {
+    margin-left: 150px;
+    margin-right: 34%;
+    float: left;
+    
+    @include respond-to(wide-mobile) {
+        margin-left: 0;
+        margin-right: 45%;
+    }
+    
+    @include respond-to(thin-mobile) {
+        margin: 0;
+    }
 }
-.site-content {
-	float: left;
-	width: 100%;
+
+#secondary {
+	margin: 0 0 0 -100%;
+    width: 150px;
+    float: left;
+    
+    @include respond-to(mobile) {
+        display: none;
+    }
 }
-#content {
-	margin: 10px 35% 0 150px;
-	
+
+#tertiary {
+	margin: 0 0 0 -34%;
+    width: 33%;
+    float: left;
+    
+    @include respond-to(wide-mobile) {
+        margin: 0 0 0 -45%;
+        width: 44%;
+    }
+    
+    @include respond-to(thin-mobile) {
+        margin: 0;
+        width: 100%;
+    }
 }
+
 
 #main .widget-area {
-	float: left;
 	overflow: hidden;
 	padding: 20px 0 0;
+    
+    @include respond-to(thin-mobile) {
+        .widget > *:not(.widget-title) {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
 }
-#secondary { /* Sidebar 1 */
-	margin: 0 0 0 -100%;
-	width: 150px;
-}
-#tertiary { /* Sidebar 2 */
-	margin: 0 0 0 -34%;
-	width: 34%;
-}
+
 .clear,
 .site-footer {
 	clear: both;
 	width: 100%;
 }
-.site-info{
+
+.site-info {
 	border-top: 1px solid #CCC;
 	padding: 10px 0;
-	margin-left:150px;
+	margin-left: 150px;
 	font-size: 11px;
 	color:#AAA;
+    
+    @include respond-to(thin-mobile) {
+        margin-left: 0;
+        padding-left: 5px;
+    }
 }
 
 /* = The Grid 
 ----------------------------------------------- */
-.row{
-	position:relative;
+.row {
+	position: relative;
 	overflow: hidden;
 	clear: both;
 }
-.row .half{
+
+.row .half {
 	width: 50%;
 	float: left;
-}
-/* Responsive mixins
------------------------------------------------ */
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: 479px) { @content; }
-  }
-  @else if $media == wide-handhelds {
-    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
-  }
-  @else if $media == tablets {
-    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
-  }
-  
 }

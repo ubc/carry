@@ -6,28 +6,31 @@
 	float: left;
 	margin-right: 1.5em;
 }
+
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
+
 .aligncenter {
 	clear: both;
 	display: block;
 	margin: 0 auto;
 }
 
-
 /* =Content
 ----------------------------------------------- */
 .has-feature-image{
 	position: relative;
 }
+
 .has-feature-image img,
-.has-feature-image .enter-header-thumb{
+.has-feature-image .enter-header-thumb {
 	margin-left: -15px;
 }
-.has-feature-image img{
+
+.has-feature-image img {
 	-webkit-border-top-right-radius: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	-moz-border-radius-topright: 3px;
@@ -36,17 +39,21 @@
 	border-bottom-right-radius: 3px;
     max-width: 100%;
 }
-.has-feature-image h1{
+
+.has-feature-image h1 {
 	color: #333;
 }
+
 .has-feature-image .entry-meta a,
-.has-feature-image .entry-meta{
+.has-feature-image .entry-meta {
 	color: #555;
 }
-.has-feature-image .entry-meta a:hover{
+
+.has-feature-image .entry-meta a:hover {
 	color: #333;
 }
-.has-feature-image .enter-header-thumb{
+
+.has-feature-image .enter-header-thumb {
 	position: absolute;
 	bottom: 0;
 	background: rgb(255, 255, 255); /* The Fallback */
@@ -54,12 +61,15 @@
     width: 100%;
     padding:0 15px 10px;
 }
+
 .sticky {
+    
 }
+
 .single .hentry,
 .page .hentry,
-search-no-results .hentry{
-	padding-top:15px;
+search-no-results .hentry {
+	padding-top: 15px;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 0;
@@ -73,144 +83,166 @@ search-no-results .hentry{
 	border-bottom: 1px solid #EEE;
 	border-left:1px solid #CCC;
 }
-.page-title{
+
+.page-title {
 	font-size: 16px;
 	line-height: 1;
 	margin-bottom: 2px;
 }
 
-.archive .page-title span{
+.archive .page-title span {
 	font-style: italic;
 }
+
 .error404 .page-title,
 .page .entry-title,
-.single .entry-title{
+.single .entry-title {
 	font-size: 28px;
 	line-height: 1;
 	margin-bottom: 2px;
 }
-.entry-title a{
+
+.entry-title a {
 	font-size:16px;
 	text-decoration: none;
 }
+
 .comments-area,
-.page-header{
+.page-header {
 	margin: 20px 15px 5px;
 }
+
 .entry-meta {
 	clear: both;
 	text-transform: uppercase;
-	font-size:11px;
-	color:#AAA;
+	font-size: 11px;
+	color: #AAA;
 }
-.entry-meta a{
-	color:#AAA;
-	text-decoration:none;
+
+.entry-meta a {
+	color: #AAA;
+	text-decoration: none;
 }
-.entry-meta a:hover{
-	color:#555;
+
+.entry-meta a:hover {
+	color: #555;
 	text-decoration: underline;
 }
-.meta-shell{
-	padding-right:15px;
+
+.meta-shell {
+	padding-right: 15px;
 }
+
 .byline {
 	display: none;
 }
-.edit-link{
+
+.edit-link {
 	position: absolute;
-	top:30px;
+	top: 30px;
 	left: -15px;
 	display: block;
 }
+
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
+
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em -10px;
 	word-spacing: 0px;
-
 	position: relative;
 	overflow: hidden;
 }
 
-.page-links a{
+.page-links a {
 	border-radius: 15px;
 	text-decoration: none;
 	color: #333;
 	background: #EEE;
-	
 	float: left;
 	margin-right: 2px;
 }
-.page-links a:hover{
+
+.page-links a:hover {
 	background: #CCC;
 }
-.page-links-title{ 
+
+.page-links-title {
 	text-transform: uppercase; 
 	font-size: 11px;
 	line-height: 22px;
 }
-.page-links span{
+
+.page-links span {
 	padding: 0 10px;
 	float: left;
 }
 
 /* no results on the search page */
-.no-results em{
+.no-results em {
 	background: #FCF44C; 
 	padding: 2px 5px;
 	color: #333;
 	letter-spacing: 0.7px;
 }
-.no-results #searchform #searchsubmit{
+
+.no-results #searchform #searchsubmit {
 	float: right;
 	margin-right: 3px;
 	margin-top: -20px;
 }
-.no-results .s-shell{
+
+.no-results .s-shell {
 	margin-right: 60px;
     overflow: hidden;
     position: relative;
     width: auto;
     display: block;
 }
-.no-results #searchform #s{
+
+.no-results #searchform #s {
 	width: 100%;
 }
 
 /* chat */
-.chat-row{
+.chat-row {
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 5px;
 }
-.chat-author{
+
+.chat-author {
 	width: 15%;
 }
-.chat-text{
+
+.chat-text {
 	width: 85%;
 	background: #EEE url("img/icons.png") repeat-y;
 	color:#333;
 }
-.chat-text-inner{
+
+.chat-text-inner {
 	padding: 1px 15px;
 }
-.chat-speaker-1  .chat-author,
-.chat-speaker-3  .chat-author,
-.chat-speaker-5  .chat-author,
-.chat-speaker-7  .chat-author,
-.chat-speaker-9  .chat-author{
+
+.chat-speaker-1 .chat-author,
+.chat-speaker-3 .chat-author,
+.chat-speaker-5 .chat-author,
+.chat-speaker-7 .chat-author,
+.chat-speaker-9 .chat-author {
 	float: left;
 	text-align: right;
 	@include border-radius( 3px );
 }
+
 .chat-speaker-1 .chat-text,
 .chat-speaker-3 .chat-text,
 .chat-speaker-5 .chat-text,
@@ -219,52 +251,57 @@ search-no-results .hentry{
 	float: right;
 	background-position: -474px 1px;
 }
+
 .chat-speaker-2 .chat-author,
 .chat-speaker-4 .chat-author,
 .chat-speaker-6 .chat-author,
 .chat-speaker-8 .chat-author,
-.chat-speaker-10 .chat-author{
+.chat-speaker-10 .chat-author {
 	float: right;
 	text-align: left;
 }
+
 .chat-speaker-2 .chat-author .fn,
 .chat-speaker-4 .chat-author .fn,
 .chat-speaker-6 .chat-author .fn,
 .chat-speaker-8 .chat-author .fn,
-.chat-speaker-10 .chat-author .fn{
+.chat-speaker-10 .chat-author .fn {
 	float: right;
 	width: 89%;
 }
+
 .chat-speaker-2 .chat-text,
 .chat-speaker-4 .chat-text,
 .chat-speaker-6 .chat-text,
 .chat-speaker-8 .chat-text,
-.chat-speaker-10 .chat-text{
+.chat-speaker-10 .chat-text {
 	float: left;
 	background: #CCC url("img/chat-right.gif") repeat-y right top;
-	
 }
+
 /* =Media
 ----------------------------------------------- */
-
 .site-header img,
 .entry-content img,
 .comment-content img,
 .widget img {
 	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
+
 .site-header img,
 .entry-content img,
 img[class*="align"],
 img[class*="wp-image-"] {
 	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
+
 .site-header img,
 .entry-content img,
 img.size-full {
 	max-width: 100%;
 	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
+
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
 	border: none;
@@ -272,61 +309,77 @@ img.size-full {
 	margin-top: 0;
 	padding: 0;
 }
+
 .wp-caption {
 	border: 1px solid #ccc;
 	max-width: 100%;
 }
+
 .wp-caption.aligncenter,
 .wp-caption.alignleft,
 .wp-caption.alignright {
 	margin-bottom: 1.5em;
 }
+
 .wp-caption img {
 	display: block;
 	margin: 1.2% auto 0;
 	max-width: 98%;
 	height: auto;
 }
+
 .wp-caption-text {
 	text-align: center;
 }
+
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
+
 #content .gallery {
 	margin-bottom: 1.5em;
 }
+
 .gallery-caption {
+    
 }
+
 #content .gallery a img {
 	border: none;
 	height: auto;
 	max-width: 90%;
 }
+
 #content .gallery dd {
 	margin: 0;
 }
+
 #content .gallery-columns-4 .gallery-item {
+    
 }
+
 #content .gallery-columns-4 .gallery-item img {
+    
 }
-#image-navigation{
+
+#image-navigation {
 	margin-top: 10px;
 	position: relative;
 	overflow: hidden;
 }
 
-#image-navigation .previous-image{
+#image-navigation .previous-image {
 	clear: left;
 	float: left;
 }
-#image-navigation .next-image{
+
+#image-navigation .next-image {
 	float: right;
 }
-#image-navigation .post-parent{
+
+#image-navigation .post-parent {
 	display: block;
-	float: left;
-	
+	float: left;	
 }
 
 /* Make sure embeds and iframes fit their containers */
@@ -339,37 +392,45 @@ object {
 /* = 404 page
 ----------------------------------------------- */
 .error404 .entry-content .widgettitle {
-	font-size:16px;
+	font-size: 16px;
 }
-.column-404{
- width:14.28%;
- float: left;
- height: 5px;
- margin-bottom: 16px;
+
+.column-404 {
+    width: 14.28%;
+    float: left;
+    height: 5px;
+    margin-bottom: 16px;
 }
-.yellow{
+
+.yellow {
 	background: yellow;
 }
-.red{
+
+.red {
 	background: red;
 }
-.blue{
+
+.blue {
 	background: blue;
 }
-.black{
+
+.black {
 	background: black;
 }
-.green{
+
+.green {
 	background: lime;
 }
-.purple{
+
+.purple {
 	background: fuchsia;
 }
-.aqua{
+
+.aqua {
 	background: aqua;
 }
-.content-404 .widgettitle{
+
+.content-404 .widgettitle {
 	text-transform: uppercase;
-	color:#444;
-	
+	color: #444;
 }
