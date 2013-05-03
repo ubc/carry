@@ -11,8 +11,8 @@
 	overflow: hidden;
 	display: block;
     
-    @include respond-to(thin-mobile) {
-        padding-left: 5px;
+    @include respond-to(mobile) {
+        padding-left: 7.703125px;
     }
 }
 

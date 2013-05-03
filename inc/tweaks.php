@@ -26,9 +26,9 @@ add_filter( 'wp_page_menu_args', 'carry_page_menu_args' );
  */
 function carry_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author
-	if ( is_multi_author() ) {
+	if ( is_multi_author() ):
 		$classes[] = 'group-blog';
-	}
+	endif;
 
 	return $classes;
 }
@@ -40,12 +40,14 @@ add_filter( 'body_class', 'carry_body_classes' );
  * @since carry 1.0
  */
 function carry_enhanced_image_navigation( $url, $id ) {
-	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
+	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) ):
 		return $url;
+	endif;
 
 	$image = get_post( $id );
-	if ( ! empty( $image->post_parent ) && $image->post_parent != $id )
+	if ( ! empty( $image->post_parent ) && $image->post_parent != $id ):
 		$url .= '#main';
+	endif;
 
 	return $url;
 }

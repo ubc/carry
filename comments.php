@@ -18,30 +18,29 @@
 	 * the visitor has not yet entered the password we will
 	 * return early without loading the comments.
 	 */
-	if ( post_password_required() )
+	if ( post_password_required() ):
 		return;
+	endif;
 ?>
 
-	<div id="comments" class="comments-area">
-
+<div id="comments" class="comments-area">
 	<?php // You can start editing here -- including this comment! ?>
-
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
 				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'carry' ),
-					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+					number_format_i18n( get_comments_number() ), '<span>'.get_the_title().'</span>' );
 			?>
 		</h2>
-
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'carry' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'carry' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'carry' ) ); ?></div>
-		</nav>
+		
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ): // are there comments to navigate through ?>
+			<nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
+				<h1 class="assistive-text"><?php _e( 'Comment navigation', 'carry' ); ?></h1>
+				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'carry' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'carry' ) ); ?></div>
+			</nav>
 		<?php endif; // check for comment navigation ?>
-
+		
 		<ol class="commentlist">
 			<?php
 				/* Loop through and list the comments. Tell wp_list_comments()
@@ -53,41 +52,37 @@
 				wp_list_comments( array( 'callback' => 'carry_comment' ) );
 			?>
 		</ol>
-
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-		<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
-			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'carry' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'carry' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'carry' ) ); ?></div>
-		</nav>
+		
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ): // are there comments to navigate through ?>
+			<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
+				<h1 class="assistive-text"><?php _e( 'Comment navigation', 'carry' ); ?></h1>
+				<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'carry' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'carry' ) ); ?></div>
+			</nav>
 		<?php endif; // check for comment navigation ?>
-
 	<?php endif; // have_comments() ?>
 
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
+	<?php if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ): ?>
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'carry' ); ?></p>
 	<?php endif; ?>
 
 	<?php 
-	global $current_user;
-	
-	//remove PHP Warning when user not logged in
-	$avatar = '';
-	$display_name = '';
-	if(isset($current->data)) {
-	  $avatar = get_avatar( $current_user->data->user_email, 30 );
-	  $display_name = $current_user->data->display_name;
-	}
-	
-	$comment_form_args = array(
-		'logged_in_as' => '<div class="comment-author vcard">'.$avatar.
-							'<cite class="fn">'.$display_name.'</cite></div><!-- .comment-author .vcard -->'
-							.sprintf( __( '<a href="%1$s" title="Log out of this account" class="comment-logout">Log out?</a>' ), wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) )
-	
-	);
-	comment_form( $comment_form_args ); ?>
-
+		global $current_user;
+		
+		//remove PHP Warning when user not logged in
+		$avatar = '';
+		$display_name = '';
+		if ( isset( $current->data ) ):
+			$avatar = get_avatar( $current_user->data->user_email, 30 );
+			$display_name = $current_user->data->display_name;
+		endif;
+		
+		$comment_form_args = array(
+			'logged_in_as' => '<div class="comment-author vcard">'.$avatar.
+								'<cite class="fn">'.$display_name.'</cite></div><!-- .comment-author .vcard -->'
+								.sprintf( __( '<a href="%1$s" title="Log out of this account" class="comment-logout">Log out?</a>' ), wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) )
+		);
+		
+		comment_form( $comment_form_args );
+	?>
 </div><!-- #comments .comments-area -->
