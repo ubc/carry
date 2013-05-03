@@ -17,24 +17,23 @@
 }
 
 #primary {
-    margin-left: 150px;
     margin-right: 34%;
-    float: left;
+    padding-left: 150px;
     
     @include respond-to(wide-mobile) {
-        margin-left: 0;
+        padding-left: 0;
         margin-right: 45%;
     }
     
     @include respond-to(thin-mobile) {
+        padding: 0;
         margin: 0;
     }
 }
 
 #secondary {
-	margin: 0 0 0 -100%;
-    width: 150px;
     float: left;
+    width: 150px;
     
     @include respond-to(mobile) {
         display: none;
@@ -42,21 +41,29 @@
 }
 
 #tertiary {
-	margin: 0 0 0 -34%;
-    width: 33%;
-    float: left;
+	//margin: 0 0 0 -33%;
+    //float: right;
+    width: 32%;
+    position: absolute;
+    top: 50px;
+    right: 4.5%;
+
+    @include respond-to(tablet) {
+        right: 1%;
+    }
     
     @include respond-to(wide-mobile) {
         margin: 0 0 0 -45%;
-        width: 44%;
+        width: 45%;
+        right: 0;
     }
     
     @include respond-to(thin-mobile) {
         margin: 0;
         width: 100%;
+        position: static;
     }
 }
-
 
 #main .widget-area {
 	overflow: hidden;
