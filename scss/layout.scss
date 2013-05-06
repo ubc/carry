@@ -32,7 +32,9 @@
 }
 
 #secondary {
-    float: left;
+    //float: left;
+    position: absolute;
+    top: 50px;
     width: 150px;
     
     @include respond-to(mobile) {
