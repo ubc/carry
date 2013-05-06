@@ -3,6 +3,7 @@
 /* =Layout
 ----------------------------------------------- */
 .shell {
+    position: relative;
     width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -17,25 +18,25 @@
 }
 
 #primary {
+    margin-left: 150px;
     margin-right: 34%;
-    padding-left: 150px;
     
     @include respond-to(wide-mobile) {
-        padding-left: 0;
+        margin-left: 0;
         margin-right: 45%;
     }
     
     @include respond-to(thin-mobile) {
-        padding: 0;
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 #secondary {
-    //float: left;
     position: absolute;
-    top: 50px;
+    top: 0;
     width: 150px;
+    border-right: 1px solid #CCC;
     
     @include respond-to(mobile) {
         display: none;
@@ -43,25 +44,16 @@
 }
 
 #tertiary {
-	//margin: 0 0 0 -33%;
-    //float: right;
     width: 32%;
     position: absolute;
-    top: 50px;
-    right: 4.5%;
-
-    @include respond-to(tablet) {
-        right: 1%;
-    }
+    top: 0;
+    right: 0;
     
     @include respond-to(wide-mobile) {
-        margin: 0 0 0 -45%;
         width: 45%;
-        right: 0;
     }
     
     @include respond-to(thin-mobile) {
-        margin: 0;
         width: 100%;
         position: static;
     }
@@ -69,7 +61,7 @@
 
 #main .widget-area {
 	overflow: hidden;
-	padding: 20px 0 0;
+    margin-top: 5px;
     
     @include respond-to(thin-mobile) {
         .widget > *:not(.widget-title) {
@@ -87,10 +79,14 @@
 
 .site-info {
 	border-top: 1px solid #CCC;
-	padding: 10px 0;
 	margin-left: 150px;
 	font-size: 11px;
 	color:#AAA;
+	padding: {
+        top: 10px;
+        bottom: 10px;
+        left: 3px;
+    }
     
     @include respond-to(thin-mobile) {
         margin-left: 0;
