@@ -204,7 +204,7 @@ if ( ! function_exists( 'carry_single_header' ) ):
 		
 		if ( has_post_thumbnail() ):
 			$has_thumbnail = 'has-feature-image';
-			$thumb = get_the_post_thumbnail( $post->ID, array( 615, 9999 ) );
+			$thumb = get_the_post_thumbnail( $post->ID, 'featured-single-image' );
 		endif;
 		?>
 		<header class="entry-header <?php echo $has_thumbnail; ?>">

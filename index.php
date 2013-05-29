@@ -36,7 +36,7 @@
 		endif;
 	?>
 	</div><!-- #content -->
-</div><!-- #primary .site-content -->
 
-<?php get_sidebar( 'right' ); ?>
+	<?php get_sidebar( 'right' ); ?>
+</div><!-- #primary .site-content -->
 <?php get_footer(); ?>

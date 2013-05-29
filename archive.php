@@ -11,7 +11,7 @@
 <?php get_header(); ?>
 <?php get_sidebar( 'left' ); ?>
 
-<section id="primary" class="site-content">
+<div id="primary" class="site-content">
 	<div id="content" role="main">
 		<?php
 			if ( have_posts() ):
@@ -80,8 +80,9 @@
 				get_template_part( 'no-results', 'archive' );
 			endif;
 		?>
-	</div><!-- #content -->
-</section><!-- #primary .site-content -->
+	</div><!-- #content -->	
+	<?php get_sidebar( 'right' ); ?>
+</div><!-- #primary .site-content -->
 
-<?php get_sidebar( 'right' ); ?>
+
 <?php get_footer(); ?>

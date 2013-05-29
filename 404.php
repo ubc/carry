@@ -68,7 +68,8 @@
 			</div><!-- .entry-content -->
 		</article><!-- #post-0 -->
 	</div><!-- #content -->
+	<?php get_sidebar( 'right' ); ?>
 </section><!-- #primary .site-content -->
 
-<?php get_sidebar( 'right' ); ?>
+
 <?php get_footer(); ?>

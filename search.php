@@ -9,7 +9,7 @@
 <?php get_header(); ?>
 <?php get_sidebar( 'left' ); ?>
 
-<section id="primary" class="site-content">
+<div id="primary" class="site-content">
 	<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">
@@ -30,7 +30,6 @@
 			<?php get_template_part( 'no-results', 'search' ); ?>
 		<?php endif; ?>
 	</div><!-- #content -->
-</section><!-- #primary .site-content -->
-
-<?php get_sidebar( 'right' ); ?>
+	<?php get_sidebar( 'right' ); ?>
+</div><!-- #primary .site-content -->
 <?php get_footer(); ?>

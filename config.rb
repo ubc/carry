@@ -1,3 +1,4 @@
+# to start editing the scss files first type 'compass watch' in the main directory
 http_path = "/"
 css_dir = "css"
 sass_dir = "scss"

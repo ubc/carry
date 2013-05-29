@@ -95,3 +95,26 @@
 	text-align: right;
 	width: 50%;
 }
+
+#mobile-view{
+	
+	text-decoration: none;
+	display:none;
+	width:100px;
+	background:#FFF;
+	height:34px;
+	float:right;
+	margin-top:-46px;
+	font-size:16px;
+	line-height:36px;
+	padding:5px 10px;
+	margin-right:2px;
+	
+	@include respond-to(mobile) {
+    	display:block;
+    }
+    
+}
+#mobile-view.show-menu{
+    	height:38px;
+    }

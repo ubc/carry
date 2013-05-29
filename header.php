@@ -62,5 +62,6 @@
 		</div>
 	</header><!-- #masthead .site-header -->
 	<div class="shell hfeed site">
-		<div id="main">
+		<div id="main" class="main-column-wrap">
+			<div class="main-column">
 

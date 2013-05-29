@@ -64,6 +64,10 @@ if ( ! function_exists( 'carry_setup' ) ):
 		 * Add support for the Aside Post Formats
 		 */
 		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'quote', 'link', 'image' ) );
+		
+		if ( function_exists( 'add_image_size' ) ) { 
+			add_image_size( 'featured-single-image', 630, 300, true ); //(cropped)
+		}
 	}
 endif; // carry_setup
 add_action( 'after_setup_theme', 'carry_setup' );
@@ -75,7 +79,8 @@ add_action( 'after_setup_theme', 'carry_setup' );
  */
 function carry_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Right Side', 'carry' ),
+		'name'          => __( 'Navigation ', 'carry' ),
+		'description'   => 'Sidebar on the left side to place your navigational aids',
 		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -84,7 +89,7 @@ function carry_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name'          => __( 'Left Side', 'carry' ),
+		'name'          => __( 'Right Sidebar', 'carry' ),
 		'id'            => 'sidebar-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

@@ -7,9 +7,8 @@
  * @package carry
  * @since carry 1.0
  */
-?>
-	</div><!-- #main -->
-	<div class="clear"></div>
+?>		</div> <!-- .main-column-->
+	</div><!-- #main .main-column-wrap -->
 </div><!-- .shell .hfeed .site -->
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class=" shell">

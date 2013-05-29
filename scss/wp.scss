@@ -38,6 +38,7 @@
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
     max-width: 100%;
+    height:auto;
 }
 
 .has-feature-image h1 {
@@ -78,7 +79,7 @@ search-no-results .hentry {
 
 .content-404,
 .hentry {
-	margin: 0 15px 1.5em 0;
+	margin: 0 15px 1.5em -1px;
 	padding: 1px 0 15px 15px;
 	border-bottom: 1px solid #EEE;
 	border-left:1px solid #CCC;
