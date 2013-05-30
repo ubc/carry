@@ -25,6 +25,10 @@
     height:1%;
 }
 
+#full-content,
+#primary {
+	margin-left: 150px;
+}
 
 #secondary {
     position:absolute;
@@ -44,35 +48,35 @@
 }
 
 #primary {
-	margin-left:150px;
-    background:#FFF;
-    position:relative;
-    overflow:hidden;
-    border-left:1px solid $gray;
-    border-right:1px solid $gray;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    border-left: 1px solid $gray;
+    border-right: 1px solid $gray;
     @include respond-to(mobile) {
         margin-left:0;
     }
-
     
     @include respond-to(thin-mobile) {
         
     }
 }
-#primary #content{
-	float:left;
-	width:60%;
+
+#primary #content {
+	float: left;
+	width: 60%;
 	@include respond-to(mobile) {
-      	width:55%;
+      	width: 55%;
     }
+    
     @include respond-to(thin-mobile) {
-        width:100%;
+        width: 100%;
     }
 }
 
 #tertiary {
     width: 40%;
-    float:left;
+    float: left;
     
     @include respond-to(mobile) {
         width: 45%;
@@ -87,9 +91,11 @@
 #main .widget-area {
 	overflow: hidden;
     margin-top: 5px;
-    @include respond-to(mobile){
+    
+    @include respond-to(mobile) {
     	margin-top:0;
     }
+    
     @include respond-to(thin-mobile) {
         .widget > *:not(.widget-title) {
             margin-right: 5px;

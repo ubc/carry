@@ -10,7 +10,6 @@
 <a href="#" id="mobile-view">Menu</a>
 
 <div id="secondary" class="widget-area" role="navigation">
-	
 	<?php do_action( 'before_sidebar' ); ?>
 	<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 		<aside class="widget widget_nav_menu">

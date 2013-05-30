@@ -13,9 +13,11 @@
 ?>
 <?php get_header(); ?>
 <?php get_sidebar( 'left' ); ?>
+<?php get_sidebar( 'full' ); ?>
 
 <div id="primary" class="site-content">
 	<div id="content" role="main">
+		<?php get_sidebar( 'above' ); ?>
 		<?php
 			while ( have_posts() ):
 				the_post();
@@ -24,7 +26,9 @@
 				comments_template( '', true );
 			endwhile; 
 		?>
+		<?php get_sidebar( 'below' ); ?>
 	</div><!-- #content -->
 	<?php get_sidebar( 'right' ); ?>
 </div><!-- #primary .site-content -->
+
 <?php get_footer(); ?>
