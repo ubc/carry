@@ -96,25 +96,25 @@
 	width: 50%;
 }
 
-#mobile-view{
-	
+#mobile-view {
 	text-decoration: none;
-	display:none;
-	width:100px;
-	background:#FFF;
-	height:34px;
-	float:right;
-	margin-top:-46px;
-	font-size:16px;
-	line-height:36px;
-	padding:5px 10px;
-	margin-right:2px;
-	
-	@include respond-to(mobile) {
-    	display:block;
-    }
+	display: none;
+	width: 100px;
+	background: #FFF;
+	height: 34px;
+	float: right;
+	margin-top: -46px;
+	font-size: 20px;
+	line-height: 36px;
+	padding: 5px 10px;
+	margin-right: 2px;
+    text-align: center;
     
-}
-#mobile-view.show-menu{
-    	height:38px;
+	@include respond-to(mobile) {
+    	display: block;
     }
+}
+
+#mobile-view.show-menu {
+    height:38px;
+}

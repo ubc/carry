@@ -7,7 +7,7 @@
  */
 ?>
 
-<a href="#" id="mobile-view">Menu</a>
+<a href="#" id="mobile-view" class="visible-phone">MENU</a>
 
 <div id="secondary" class="widget-area" role="navigation">
 	<?php do_action( 'before_sidebar' ); ?>
